@@ -4,18 +4,34 @@ import "./App.css";
 function App() {
   // FAKE : appel vers une api (donc BDD), pour récupérer
   // les données suivantes
-  const firstName = "David";
-  const lastName = "Robert";
-  const job = "web dev";
-  const age = 33;
+
+  const users = [
+    {
+      firstName: "David ",
+      lastName: "Robert",
+      job: "web dev",
+    },
+    {
+      firstName: "David 2",
+      lastName: "Robert 2",
+      job: "web dev 2",
+    },
+    {
+      firstName: "David 3",
+      lastName: "Robert 3",
+      job: "web dev 3",
+    },
+  ];
 
   return (
     <div>
-      <h2>
-        Bonjour {firstName} {lastName}
-      </h2>
-      <h3>Ton métier : {job}</h3>
-      <h4>Ton age : {age} </h4>
+      {users.map((user) => (
+        <div>
+          <h1>{user.firstName}</h1>
+          <h2>{user.lastName}</h2>
+          <h3>{user.job}</h3>
+        </div>
+      ))}
     </div>
   );
 }
