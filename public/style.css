@@ -1,0 +1,13 @@
+header {
+  height: 200px;
+  background-color: green;
+}
+
+footer {
+  height: 200px;
+  background-color: yellow;
+}
+
+main {
+  text-align: center;
+}

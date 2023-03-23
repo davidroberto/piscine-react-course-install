@@ -1,18 +1,15 @@
-import logo from "./logo.svg";
-import "./App.css";
+import Header from "./Header";
+import Main from "./Main";
+import Footer from "./Footer";
 
 function App() {
-  const isUserConnected = true;
-
-  // if (isUserConnected) {
-  //   console.log("hello");
-  // } else {
-  //   console.log("connecte toi. Et plus vite que ça !");
-  // }
-
-  // isUserConnected ? console.log("hello") : console.log("connecte toi. Et plus vite que ça !");
-
-  return <div>{isUserConnected ? <h1>Hello David</h1> : <h1>Connecte toi. Et plus vite que ça !</h1>}</div>;
+  return (
+    <div>
+      <Header />
+      <Main />
+      <Footer />
+    </div>
+  );
 }
 
 export default App;
