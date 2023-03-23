@@ -2,38 +2,17 @@ import logo from "./logo.svg";
 import "./App.css";
 
 function App() {
-  // FAKE : appel vers une api (donc BDD), pour récupérer
-  // les données suivantes
+  const isUserConnected = true;
 
-  const users = [
-    {
-      firstName: "David ",
-      lastName: "Robert",
-      job: "web dev",
-    },
-    {
-      firstName: "David 2",
-      lastName: "Robert 2",
-      job: "web dev 2",
-    },
-    {
-      firstName: "David 3",
-      lastName: "Robert 3",
-      job: "web dev 3",
-    },
-  ];
+  // if (isUserConnected) {
+  //   console.log("hello");
+  // } else {
+  //   console.log("connecte toi. Et plus vite que ça !");
+  // }
 
-  return (
-    <div>
-      {users.map((user) => (
-        <div>
-          <h1>{user.firstName}</h1>
-          <h2>{user.lastName}</h2>
-          <h3>{user.job}</h3>
-        </div>
-      ))}
-    </div>
-  );
+  // isUserConnected ? console.log("hello") : console.log("connecte toi. Et plus vite que ça !");
+
+  return <div>{isUserConnected ? <h1>Hello David</h1> : <h1>Connecte toi. Et plus vite que ça !</h1>}</div>;
 }
 
 export default App;
